@@ -1,0 +1,10 @@
+preprocessed_train:
+  type: pandas.ParquetDataset
+  filepath: data/03_primary/preprocessed_train.pq
+  metadata:
+    kedro-viz:
+      layer: primary
+
+preprocessed_test:
+  type: pandas.ParquetDataset
+  filepath: data/03_primary/preprocessed_test.pq

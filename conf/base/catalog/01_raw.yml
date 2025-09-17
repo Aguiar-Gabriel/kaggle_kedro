@@ -1,0 +1,16 @@
+test:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/test.csv
+
+train:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/train.csv
+  metadata:
+    kedro-viz:
+      layer: raw
+
+titanic_full:
+  type: pandas.ExcelDataset
+  filepath: data/01_raw/titanic_parts.xlsx
+  load_args:
+    sheet_name: null

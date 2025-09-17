@@ -1,0 +1,9 @@
+# Parâmetros que sobrescrevem os de `base` quando --env=local
+
+feature_engineering_params:
+  linear_features:
+    # No ambiente local, queremos testar com um valor diferente
+    - input_col: "Age"
+      output_col: "Age_Plus_10"
+      operation: "add"
+      value: 999 # Valor de teste!

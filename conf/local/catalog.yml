@@ -1,0 +1,6 @@
+# Este catálogo é carregado apenas com --env=local
+# Ele sobrescreve definições do catálogo base.
+
+descriptive_summary:
+  type: pandas.CSVDataset
+  filepath: data/08_reporting/local_descriptive_summary.csv

@@ -1,0 +1,5 @@
+# conf/development/catalog.yml
+train:
+  type: pandas.ExcelDataset
+  # Assume que você tem uma amostra menor em 'data/01_raw/train_sample.xlsx'
+  filepath: data/01_raw/train_sample.xlsx

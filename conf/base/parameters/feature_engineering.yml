@@ -1,0 +1,13 @@
+feature_engineering_params:
+  linear_features:
+    # Exemplo 1: Somar um valor constante
+    - input_col: "Age"
+      output_col: "Age_Plus_10"
+      operation: "add"
+      value: 10
+
+    # Exemplo 2: Subtrair o valor de outra coluna
+    - input_col: "Fare"
+      output_col: "Fare_Minus_Age"
+      operation: "subtract"
+      from_col: "Age"
