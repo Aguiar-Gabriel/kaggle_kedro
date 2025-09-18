@@ -9,8 +9,8 @@ train:
     kedro-viz:
       layer: raw
 
-titanic_full:
-  type: pandas.ExcelDataset
-  filepath: data/01_raw/titanic_parts.xlsx
-  load_args:
-    sheet_name: null
+# titanic_full:
+#   type: pandas.ExcelDataset
+#   filepath: data/01_raw/titanic_parts.xlsx
+#   load_args:
+#     sheet_name: null
